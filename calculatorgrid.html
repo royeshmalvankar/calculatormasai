@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            color: teal;
+            font-weight: bolder;
+            font-size: 60px;
+            text-align: center;
+        }
+        #calc{
+            /* border: 2px solid red; */
+            height: 900px;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(4,120px);
+            grid-template-rows: repeat(5,120px);
+            gap: 20px 20px;
+            justify-content: center;
+            align-content: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            grid-template-areas: 
+            "a a a a"
+            "b c d e"
+            "f h i j"
+            "k l m n"
+            "o p q r";
+        }
+        #calc>div{
+            /* border: 2px solid blue; */
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #calc>:nth-child(1){
+            background-color: none;
+            grid-area: a;
+        /* }
+        #calc>:nth-child(2){
+            
+        }
+        #calc>:nth-child(3){
+            
+        }
+        #calc>:nth-child(4){ */
+            
+        }
+        #calc>:nth-child(5){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: b;
+        }
+        #calc>:nth-child(6){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: c;
+        }
+        #calc>:nth-child(7){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: d;
+        }
+        #calc>:nth-child(8){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            grid-area: e;
+        }
+        #calc>:nth-child(9){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: f;
+        }
+        #calc>:nth-child(10){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: h;
+        }
+        #calc>:nth-child(11){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: i;
+        }
+        #calc>:nth-child(12){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            grid-area: j;
+        }
+        #calc>:nth-child(13){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: k;
+        }
+        #calc>:nth-child(14){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: l;
+        }
+        #calc>:nth-child(15){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: m;
+        }
+        #calc>:nth-child(16){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            grid-area: n;
+        }
+        #calc>:nth-child(17){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            color: white;
+            grid-area: o;
+        }
+        #calc>:nth-child(18){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: p;
+        }
+        #calc>:nth-child(19){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            grid-area: q;
+        }        
+        #calc>:nth-child(20){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            grid-area: r;
+        }
+    </style>
+    <head>
+        <h1>MASAI CALCULATOR</h1>
+    </head>
+    <body>
+        <div id="calc">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>x</div>
+            <div>C</div>
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1{
+            color: teal;
+            font-weight: bolder;
+            font-size: 60px;
+            text-align: center;
+        }
+        #calc{
+            /* border: 2px solid red; */
+            height: 900px;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(4,120px);
+            grid-template-rows: repeat(5,120px);
+            gap: 20px 20px;
+            justify-content: center;
+            align-content: center;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            grid-template-areas: 
+            "a a a a"
+            "b c d e"
+            "f h i j"
+            "k l m n"
+            "o p q r";
+        }
+        #calc>div{
+            /* border: 2px solid blue; */
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        #calc>:nth-child(1){
+            background-color: none;
+            grid-area: a;
+        /* }
+        #calc>:nth-child(2){
+            
+        }
+        #calc>:nth-child(3){
+            
+        }
+        #calc>:nth-child(4){ */
+            
+        }
+        #calc>:nth-child(5){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: b;
+        }
+        #calc>:nth-child(6){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: c;
+        }
+        #calc>:nth-child(7){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: d;
+        }
+        #calc>:nth-child(8){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            grid-area: e;
+        }
+        #calc>:nth-child(9){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: f;
+        }
+        #calc>:nth-child(10){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: h;
+        }
+        #calc>:nth-child(11){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: i;
+        }
+        #calc>:nth-child(12){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: j;
+        }
+        #calc>:nth-child(13){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: k;
+        }
+        #calc>:nth-child(14){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: l;
+        }
+        #calc>:nth-child(15){
+            font-size: 40px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: m;
+        }
+        #calc>:nth-child(16){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: n;
+        }
+        #calc>:nth-child(17){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: o;
+        }
+        #calc>:nth-child(18){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: p;
+        }
+        #calc>:nth-child(19){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: q;
+        }        
+        #calc>:nth-child(20){
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: r;
+        }
+        .c{
+                cursor: pointer;
+                font-size: 40px;
+                background-color: red;
+                border: none;
+                color: white;
+                text-align: center;
+                border-radius: 8px;
+                width: 100%;
+                height: 100%;
+                transition: 0.04s ;
+                border-radius: 20px;
+                
+                }
+        .c:hover{
+                background-color: blue;
+                color: black;
+                font-weight: bolder;
+                }
+        .o{
+                cursor: pointer;
+                font-size: 40px;
+                background-color: black;
+                border: none;
+                color: white;
+                text-align: center;
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                transition: 0.04s ;
+                }
+        .o:hover{
+                background-color: green;
+                color: black;
+                font-weight: bolder;
+                }
+        .bts{
+                cursor: pointer;
+                background-color: white;
+                font-size: 40px;
+                border: none;
+                color: black;
+                text-align: center;
+                border-radius: 20px;
+                width: 100%;
+                height: 100%;
+                transition: 0.04s ;
+                }
+        .bts:hover{
+                background-color: lightskyblue;
+                color: blue;
+                font-weight: bolder;
+                }
+        #dark{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .b{
+            cursor: pointer;
+                background-color:white;
+                font-size: 40px;
+                border:4px solid black;
+                color: black;
+                padding: 10px;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                transition: 0.04s ;
+                border-radius: 5px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        .b:hover{
+            background-color: black;
+            color: white;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+
+    </style>
+    <head>
+        <h1>MASAI CALCULATOR</h1>
+    </head>
+    <body>
+        <div id="calc">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div><button  class="bts">1</button> </div>
+            <div ><button class="bts">2</button> </div>
+            <div ><button class="bts">3</button> </div>
+            <div ><button class="o">+</button> </div>
+            <div ><button class="bts">4</button> </div>
+            <div ><button class="bts">5</button> </div>
+            <div ><button class="bts">6</button> </div>
+            <div ><button class="o">-</button> </div>
+            <div ><button class="bts">7</button> </div>
+            <div ><button class="bts">8</button> </div>
+            <div ><button class="bts">9</button> </div>
+            <div ><button class="o">x</button> </div>
+            <div ><button class="c">C</button> </div>
+            <div ><button class="bts">0</button> </div>
+            <div ><button class="o">=</button> </div>
+            <div ><button class="o"> /</button> </div>
+        </div>
+        <div id="dark">
+        <a href="C:\Users\royes\iCloudDrive\vscodepc\ldarkmodecalc.html">
+        <button class="b">Dark Mode</button>
+        </a>
+        </div>
+    </body>
+</html>
